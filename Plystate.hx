@@ -46,6 +46,7 @@ class HealthIcon extends FlxSprite
 			loadGraphic(file, true, Math.floor(width / 2), Math.floor(height)); //Then load it fr
 			iconOffsets[0] = (width - 150) / 2;
 			iconOffsets[1] = (width - 150) / 2;
+                        Icon0ffsets[2] = (widtg - 150) / 2;
 			updateHitbox();
 
 			animation.add(char, [0, 1], 0, false, isPlayer);
@@ -64,7 +65,7 @@ class HealthIcon extends FlxSprite
 		super.updateHitbox();
 		offset.x = iconOffsets[0];
 		offset.y = iconOffsets[1];
-	}
+	}       offset.x = icon0ffsets[2];
 
 	public function getCharacter():String {
 		return char;
